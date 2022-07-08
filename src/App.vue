@@ -42,6 +42,16 @@ export default {
 </style>
 
 <style lang="scss">
+:root {
+  --rage-color: #ffa500;
+}
+
+.text {
+  &\:primary {
+    color: var(--rage-color)!important;
+  }
+}
+
 /* NOT ADDED TO VUETIFY YET (3.0.0-beta.4) */
 .outline {
   border: thin solid rgba(0,0,0,.12);

@@ -4,7 +4,7 @@
         "Home",
         "Downloads",
         "Server-list",
-        "Donate"
+        "Discord"
       ],
       "subtitles": [
         "More"
@@ -12,7 +12,7 @@
       "tooltips": [
         "Client and server downloads",
         "List of all public servers",
-        "Support the developer"
+        "Visit us on Discord"
       ]
     }
   }

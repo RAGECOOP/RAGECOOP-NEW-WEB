@@ -1,10 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import homeView from '@/views/Home.vue'
 
 const routes = [
   {
     path: '/',
     name: "Home",
-    component: () => import('@/views/Home.vue')
+    component: homeView
+  },
+  {
+    path: '/downloads',
+    name: "Downloads",
+    component: () => import('@/views/Downloads.vue')
   },
   {
     path: '/:catchAll(.*)',
