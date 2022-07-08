@@ -1,5 +1,7 @@
 <template>
   <v-app>
+    <NavigationComponent />
+
     <router-view v-slot="{ Component, route }">
       <transition name="fade" mode="out-in" appear>
         <v-main :key="route.name">
@@ -9,6 +11,16 @@
     </router-view>
   </v-app>
 </template>
+
+<script>
+import NavigationComponent from '@/components/Navigation.vue'
+
+export default {
+  components: {
+    NavigationComponent
+  }
+}
+</script>
 
 <style scoped lang="scss">
 @import './styles/_variables.scss';
@@ -33,7 +45,7 @@
 /* NOT ADDED TO VUETIFY YET (3.0.0-beta.4) */
 .outline {
   border: thin solid rgba(0,0,0,.12);
-  
+
   &-bottom {
     border-bottom: thin solid rgba(0,0,0,.12);
   }

@@ -1,2 +1,8 @@
 // Place SASS variable overrides here
 // $font-size-root: 18px;
+
+// WE USE THIS FILE TO REPLACE VARIABLES FROM VUETIFY
+
+.v-theme--light {
+  --v-theme-background: 251, 252, 255!important;
+}

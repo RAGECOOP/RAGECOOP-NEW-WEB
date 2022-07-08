@@ -1,3 +1,18 @@
 {
-    "test": "Hello world!"
-}
+    "nav": {
+      "titles": [
+        "Home",
+        "Downloads",
+        "Server-list",
+        "Donate"
+      ],
+      "subtitles": [
+        "More"
+      ],
+      "tooltips": [
+        "Client and server downloads",
+        "List of all public servers",
+        "Support the developer"
+      ]
+    }
+  }

@@ -1,3 +1,18 @@
 {
-    "test": "Hallo Welt!"
+  "nav": {
+    "titles": [
+      "Startseite",
+      "Downloads",
+      "Serverliste",
+      "Spenden"
+    ],
+    "subtitles": [
+      "Mehr"
+    ],
+    "tooltips": [
+      "Client und Server Downloads",
+      "Liste aller öffentlichen Server",
+      "Unterstütze den Entwickler"
+    ]
+  }
 }
