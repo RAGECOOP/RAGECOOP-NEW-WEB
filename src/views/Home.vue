@@ -1,8 +1,8 @@
 <template>
   <div class="test">
     <div class="text-center">
-      <div class="text-h1 font-weight-medium text:primary text-shadow">RAGECOOP</div>
-      <div class="text-h1 text-white font-weight-medium text-shadow">PLAY OFFLINE-ONLINE</div>
+      <div class="text-h3 text-md-h2 text-lg-h1 font-weight-medium text:primary text-shadow">RAGECOOP</div>
+      <div class="text-h3 text-md-h2 text-lg-h1 text-white font-weight-medium text-shadow">PLAY OFFLINE-ONLINE</div>
     </div>
   </div>
 
@@ -27,15 +27,15 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Lorem ipsum Lorem ipsum</td>
-                  <td><v-rating length="5" model-value="3" readonly /></td>
-                </tr>
-                <tr>
-                  <td>Lorem ipsum Lorem ipsum</td>
+                  <td>Synchronisation</td>
                   <td><v-rating length="5" model-value="4" readonly /></td>
                 </tr>
                 <tr>
-                  <td>Lorem ipsum Lorem ipsum</td>
+                  <td>Mitwirkende</td>
+                  <td><v-rating length="5" model-value="4" readonly /></td>
+                </tr>
+                <tr>
+                  <td>Mod-Kompatibilität</td>
                   <td><v-rating length="5" model-value="3" readonly /></td>
                 </tr>
               </tbody>
@@ -54,16 +54,16 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Lorem ipsum Lorem ipsum</td>
+                  <td>Synchronisation</td>
                   <td><v-rating length="5" model-value="2" readonly /></td>
                 </tr>
                 <tr>
-                  <td>Lorem ipsum Lorem ipsum</td>
-                  <td><v-rating length="5" model-value="3" readonly /></td>
+                  <td>Mitwirkende</td>
+                  <td><v-rating length="5" model-value="1" readonly /></td>
                 </tr>
                 <tr>
-                  <td>Lorem ipsum Lorem ipsum</td>
-                  <td><v-rating length="5" model-value="1" readonly /></td>
+                  <td>Mod-Kompatibilität</td>
+                  <td><v-rating length="5" model-value="0" readonly /></td>
                 </tr>
               </tbody>
             </v-table>

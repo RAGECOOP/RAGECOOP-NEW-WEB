@@ -13,6 +13,11 @@ const routes = [
     component: () => import('@/views/Downloads.vue')
   },
   {
+    path: '/servers',
+    name: "Servers",
+    component: () => import('@/views/Servers.vue')
+  },
+  {
     path: '/:catchAll(.*)',
     name: "Not found",
     component: () => import('@/views/NotFound.vue')

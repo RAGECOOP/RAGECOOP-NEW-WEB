@@ -10,7 +10,7 @@
         {{ $t("nav.titles[1]") }}
         <v-tooltip activator="parent" location="bottom">{{ $t("nav.tooltips[0]") }}</v-tooltip>
       </v-btn>
-      <v-btn class="d-none d-md-inline-flex mx-md-1" to="#">
+      <v-btn class="d-none d-md-inline-flex mx-md-1" to="/servers">
         {{ $t("nav.titles[2]") }}
         <v-tooltip activator="parent" location="bottom">{{ $t("nav.tooltips[1]") }}</v-tooltip>
       </v-btn>
@@ -33,7 +33,7 @@
       <v-list-item to="/downloads">
         <v-list-item-title>{{ $t("nav.titles[1]") }}</v-list-item-title>
       </v-list-item>
-      <v-list-item to="/test">
+      <v-list-item to="/servers">
         <v-list-item-title>{{ $t("nav.titles[2]") }}</v-list-item-title>
       </v-list-item>
     </v-list>
