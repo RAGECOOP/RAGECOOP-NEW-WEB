@@ -4,6 +4,7 @@ import vuetify from './plugins/vuetify'
 import { loadFonts } from './plugins/webfontloader'
 
 // Custom imports
+import router from '@/router'
 import { createI18n } from 'vue-i18n/index'
 import messages from '@/lang'
 
@@ -19,5 +20,6 @@ export const i18n = createI18n({
 
 createApp(App)
   .use(vuetify)
+  .use(router)
   .use(i18n)
   .mount('#app')
