@@ -1,6 +1,6 @@
 <template>
   <v-app-bar flat class="outline-bottom">
-    <v-app-bar-nav-icon class="d-md-none mr-2" variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+    <v-app-bar-nav-icon class="d-md-none" variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
     <v-app-bar-title class="d-flex">
       <span class="font-weight-medium text:primary mr-md-3">RAGECOOP</span>
