@@ -1,7 +1,7 @@
 <template>
   <v-table
     fixed-header
-    height="calc(100vh - 130px)"
+    height="max(calc(100vh - 330px), 100px)"
     density="compact"
   >
     <thead>
@@ -18,9 +18,6 @@
         <th class="text-left">
           Players
         </th>
-        <th class="text-left">
-          Country
-        </th>
       </tr>
     </thead>
     <tbody>
@@ -30,8 +27,7 @@
             <td>{{ data.name }}</td>
             <td>{{ data.address }}:{{ data.port }}</td>
             <td>{{ data.version }}</td>
-            <td>{{ data.players }} / {{ data.maxPlayers }}</td>
-            <td>{{ data.country ?? 'null' }}</td>
+            <td><span class="font-weight-medium">{{ data.players }}</span>/{{ data.maxPlayers > 999 ? '∞' : data.maxPlayers }}</td>
           </tr>
         </template>
 

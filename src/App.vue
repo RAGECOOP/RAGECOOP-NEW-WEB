@@ -54,7 +54,7 @@ export default {
 
 /* NOT ADDED TO VUETIFY YET (3.0.0-beta.4) */
 .outline {
-  border: thin solid rgba(0,0,0,.12);
+  border: thin solid rgba(0, 0, 0, .12)!important;
 
   &-bottom {
     border-bottom: thin solid rgba(0,0,0,.12);

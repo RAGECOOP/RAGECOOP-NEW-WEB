@@ -1,7 +1,7 @@
 <template>
   <v-row v-if="list !== null">
     <v-col v-for="(item, index) in list" :key="index">
-      <v-card class="mx-auto">
+      <v-card flat class="mx-auto outline">
         <v-img
           class="align-end text-white"
           height="200"
