@@ -1,9 +1,5 @@
 <template>
-  <v-table
-    fixed-header
-    height="max(calc(100vh - 330px), 100px)"
-    density="compact"
-  >
+  <v-table fixed-header height="max(calc(100vh - 330px), 300px)">
     <thead>
       <tr>
         <th class="text-left">
@@ -18,6 +14,9 @@
         <th class="text-left">
           Players
         </th>
+        <th class="text-left">
+          Country
+        </th>
       </tr>
     </thead>
     <tbody>
@@ -28,23 +27,34 @@
             <td>{{ data.address }}:{{ data.port }}</td>
             <td>{{ data.version }}</td>
             <td><span class="font-weight-medium">{{ data.players }}</span>/{{ data.maxPlayers > 999 ? '∞' : data.maxPlayers }}</td>
+            <td>{{ data.country ?? '???' }}</td>
           </tr>
         </template>
 
         <v-card>
           <v-toolbar>{{ data.name }}</v-toolbar>
-          <v-card-text class="text-center">
-            <v-progress-circular
-              :size="50"
-              color="grey"
-              indeterminate
-            />
+          <v-card-text>
             <div>
-              This is a future feature and not implemented yet
+              <span class="font-weight-medium text-uppercase">players</span> {{ data.players }}/{{ data.maxPlayers > 999 ? '∞' : data.maxPlayers }}
+            </div>
+            <div v-show="data.language">
+              <span class="font-weight-medium text-uppercase">language</span> {{ data.language ?? null }}
+            </div>
+            <div>
+              <span class="font-weight-medium text-uppercase">address</span> {{ data.address }}:{{ data.port }}
+            </div>
+            <div v-show="data.gameMode">
+              <span class="font-weight-medium text-uppercase">gamemode</span> {{ data.gameMode ?? null }}
+            </div>
+            <div v-show="data.website">
+              <span class="font-weight-medium text-uppercase">website</span> {{ data.website ?? null }}
+            </div>
+            <div v-show="data.description">
+              <span class="font-weight-medium text-uppercase">description</span> {{ data.description ?? null }}
             </div>
           </v-card-text>
           <v-card-actions>
-            <v-btn color="error" block @click="dialogs[index] = false">Close Dialog</v-btn>
+            <v-btn color="error" block @click="dialogs[index] = false">close dialog</v-btn>
           </v-card-actions>
         </v-card>
       </v-dialog>
