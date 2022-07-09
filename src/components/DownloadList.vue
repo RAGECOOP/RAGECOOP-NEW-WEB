@@ -10,9 +10,9 @@
         >
           <v-card-title>{{ item.tag_name === 'nightly' ? 'Nightly build' : 'Release build' }}</v-card-title>
         </v-img>
-        <v-card-subtitle>{{ item.assets[0].updated_at }}</v-card-subtitle>
+        <v-card-subtitle>{{ new Date(item.assets[0].updated_at) }}</v-card-subtitle>
         <v-card-text>
-          <v-btn v-for="(item, index) in item.assets" :key="item.tag_name + index" color="success">
+          <v-btn v-for="(item, index) in item.assets" :key="item.tag_name + index" color="success" :class="index > 0 ? 'mt-2' : null">
             {{ item.name }}
           </v-btn>
         </v-card-text>

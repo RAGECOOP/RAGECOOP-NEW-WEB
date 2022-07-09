@@ -1,18 +1,18 @@
 {
-    "nav": {
-      "titles": [
-        "Home",
-        "Downloads",
-        "Server-list",
-        "Discord"
-      ],
-      "subtitles": [
-        "More"
-      ],
-      "tooltips": [
-        "Client and server downloads",
-        "List of all public servers",
-        "Visit us on Discord"
-      ]
-    }
+  "nav": {
+    "titles": [
+      "Home",
+      "Downloads",
+      "Server-list",
+      "Discord"
+    ],
+    "subtitles": [
+      "More"
+    ],
+    "tooltips": [
+      "Client and server downloads",
+      "List of all public servers",
+      "Visit us on Discord"
+    ]
   }
+}
