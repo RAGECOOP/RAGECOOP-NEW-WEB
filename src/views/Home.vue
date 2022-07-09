@@ -32,7 +32,7 @@
                 </tr>
                 <tr>
                   <td>Mitwirkende</td>
-                  <td><v-rating length="5" model-value="4" readonly /></td>
+                  <td><v-rating length="5" model-value="3" readonly /></td>
                 </tr>
                 <tr>
                   <td>Mod-Kompatibilität</td>
