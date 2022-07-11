@@ -35,8 +35,8 @@
       ]
     },
     {
-      "title": "Thanks to the following contributors",
-      "contributions": "for his amazing {0} contributions"
+      "title": "感謝以下貢獻者",
+      "contributions": "表彰他驚人的 {0} 項貢獻"
     }
   ],
 
@@ -44,15 +44,15 @@
     {
       "tables": [
         {
-          "header": ["Name", "Address", "Version", "Players", "Country"],
+          "header": ["名稱", "地址", "版本", "玩家", "國家"],
           "modal": [
-            "players",
-            "language",
-            "address",
-            "gamemode",
-            "website",
-            "description",
-            "close"
+            "在線人數:",
+            "語言:",
+            "地址:",
+            "游戲模式:",
+            "網址:",
+            "簡述:",
+            "關閉"
           ]
         }
       ]
