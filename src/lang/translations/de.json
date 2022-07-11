@@ -14,5 +14,22 @@
       "Liste aller öffentlichen Server",
       "Besuche uns auf Discord"
     ]
-  }
+  },
+
+  "home": [
+    {
+      "title": "Vergleich",
+      "subtitle": "Vergleich zu anderen Modifikationen",
+      "tables": [
+        {
+          "header": ["Option 1", "Option2"],
+          "content": [
+            "Synchronisation",
+            "Mitwirkende",
+            "Mod-Kompatibilität"
+          ]
+        }
+      ]
+    }
+  ]
 }

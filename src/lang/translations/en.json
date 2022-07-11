@@ -14,5 +14,22 @@
       "List of all public servers",
       "Visit us on Discord"
     ]
-  }
+  },
+
+  "home": [
+    {
+      "title": "Comparison",
+      "subtitle": "Compared to other modifications",
+      "tables": [
+        {
+          "header": ["Option 1", "Option2"],
+          "content": [
+            "Synchronization",
+            "Contributors",
+            "Mod-Compatibility"
+          ]
+        }
+      ]
+    }
+  ]
 }

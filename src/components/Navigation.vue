@@ -16,7 +16,7 @@
       </v-btn>
     </v-app-bar-title>
 
-    <v-btn color="rgba(110, 133, 211, 1)" to="#">
+    <v-btn color="rgba(110, 133, 211, 1)" href="https://discord.com/invite/cdkd5E8h9h">
       <v-icon color="rgba(110, 133, 211, 1)" class="mr-1">mdi-youtube-gaming</v-icon>
       {{ $t("nav.titles[3]") }}
       <v-tooltip activator="parent" location="bottom">{{ $t("nav.tooltips[2]") }}</v-tooltip>

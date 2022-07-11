@@ -7,48 +7,51 @@
   </div>
 
   <v-container>
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/tDcQpJ5silA"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-      class="iframe"
-    ></iframe>
+    <div class="text-center">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/tDcQpJ5silA"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        class="iframe"
+        style="max-width: 880px"
+      ></iframe>
+    </div>
   </v-container>
 
   <v-container>
     <v-row>
       <v-col>
         <v-card>
-          <v-card-title id="vergleich">Vergleich</v-card-title>
-          <v-card-subtitle>Vergleich zu anderen Modifikationen</v-card-subtitle>
+          <v-card-title>{{ $t("home[0].title") }}</v-card-title>
+          <v-card-subtitle>{{ $t("home[0].subtitle") }}</v-card-subtitle>
           <v-card-text>
             <div class="text-h5">RAGECOOP</div>
             <v-table>
               <thead>
                 <tr>
                   <th class="text-left">
-                    Option1
+                    {{ $t("home[0].tables[0].header[0]") }}
                   </th>
                   <th class="text-left">
-                    Option2
+                    {{ $t("home[0].tables[0].header[1]") }}
                   </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Synchronisation</td>
+                  <td>{{ $t("home[0].tables[0].content[0]") }}</td>
                   <td><v-rating length="5" model-value="4" readonly /></td>
                 </tr>
                 <tr>
-                  <td>Mitwirkende</td>
+                  <td>{{ $t("home[0].tables[0].content[1]") }}</td>
                   <td><v-rating length="5" model-value="3" readonly /></td>
                 </tr>
                 <tr>
-                  <td>Mod-Kompatibilität</td>
+                  <td>{{ $t("home[0].tables[0].content[2]") }}</td>
                   <td><v-rating length="5" model-value="3" readonly /></td>
                 </tr>
               </tbody>
@@ -58,24 +61,24 @@
               <thead>
                 <tr>
                   <th class="text-left">
-                    Option1
+                    {{ $t("home[0].tables[0].header[0]") }}
                   </th>
                   <th class="text-left">
-                    Option2
+                    {{ $t("home[0].tables[0].header[1]") }}
                   </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Synchronisation</td>
+                  <td>{{ $t("home[0].tables[0].content[0]") }}</td>
                   <td><v-rating length="5" model-value="2" readonly /></td>
                 </tr>
                 <tr>
-                  <td>Mitwirkende</td>
+                  <td>{{ $t("home[0].tables[0].content[1]") }}</td>
                   <td><v-rating length="5" model-value="1" readonly /></td>
                 </tr>
                 <tr>
-                  <td>Mod-Kompatibilität</td>
+                  <td>{{ $t("home[0].tables[0].content[2]") }}</td>
                   <td><v-rating length="5" model-value="0" readonly /></td>
                 </tr>
               </tbody>
