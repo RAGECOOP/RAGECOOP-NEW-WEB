@@ -4,14 +4,17 @@
       "Startseite",
       "Downloads",
       "Serverliste",
+      "Dokumentation",
       "Discord"
     ],
     "subtitles": [
-      "Mehr"
+      "Mehr",
+      "Entwickler"
     ],
     "tooltips": [
       "Client und Server Downloads",
       "Liste aller öffentlichen Server",
+      "Die Dokumentation für Entwickler",
       "Besuche uns auf Discord"
     ]
   },

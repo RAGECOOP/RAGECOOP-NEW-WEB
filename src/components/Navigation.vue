@@ -14,12 +14,16 @@
         {{ $t("nav.titles[2]") }}
         <v-tooltip activator="parent" location="bottom">{{ $t("nav.tooltips[1]") }}</v-tooltip>
       </v-btn>
+      <v-btn class="d-none d-md-inline-flex mx-md-1" href="https://docs.ragecoop.online/">
+        {{ $t("nav.titles[3]") }}
+        <v-tooltip activator="parent" location="bottom">{{ $t("nav.tooltips[2]") }}</v-tooltip>
+      </v-btn>
     </v-app-bar-title>
 
     <v-btn color="rgba(110, 133, 211, 1)" href="https://discord.com/invite/cdkd5E8h9h">
       <v-icon color="rgba(110, 133, 211, 1)" class="mr-1">mdi-youtube-gaming</v-icon>
-      {{ $t("nav.titles[3]") }}
-      <v-tooltip activator="parent" location="bottom">{{ $t("nav.tooltips[2]") }}</v-tooltip>
+      {{ $t("nav.titles[4]") }}
+      <v-tooltip activator="parent" location="bottom">{{ $t("nav.tooltips[3]") }}</v-tooltip>
     </v-btn>
   </v-app-bar>
   <v-navigation-drawer v-model="drawer">
@@ -35,6 +39,12 @@
       </v-list-item>
       <v-list-item to="/servers">
         <v-list-item-title>{{ $t("nav.titles[2]") }}</v-list-item-title>
+      </v-list-item>
+      <v-list-item>
+        <v-list-item-subtitle>{{ $t("nav.subtitles[1]") }}</v-list-item-subtitle>
+      </v-list-item>
+      <v-list-item href="https://docs.ragecoop.online/">
+        <v-list-item-title>{{ $t("nav.titles[3]") }}</v-list-item-title>
       </v-list-item>
     </v-list>
   </v-navigation-drawer>
