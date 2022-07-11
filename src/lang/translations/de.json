@@ -38,5 +38,24 @@
       "title": "Danke an die folgenden Mitwirkenden",
       "contributions": "für seine erstaunlichen {0} Beiträge"
     }
+  ],
+
+  "servers": [
+    {
+      "tables": [
+        {
+          "header": ["Name", "Adresse", "Version", "Spieler", "Land"],
+          "modal": [
+            "spieler",
+            "sprache",
+            "adresse",
+            "spielmodus",
+            "webseite",
+            "beschreibung",
+            "schließen"
+          ]
+        }
+      ]
+    }
   ]
 }

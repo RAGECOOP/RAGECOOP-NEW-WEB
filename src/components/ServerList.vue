@@ -3,19 +3,19 @@
     <thead>
       <tr>
         <th class="text-left">
-          Name
+          {{ $t("servers[0].tables[0].header[0]") }}
         </th>
         <th class="text-left">
-          Address
+          {{ $t("servers[0].tables[0].header[1]") }}
         </th>
         <th class="text-left">
-          Version
+          {{ $t("servers[0].tables[0].header[2]") }}
         </th>
         <th class="text-left">
-          Players
+          {{ $t("servers[0].tables[0].header[3]") }}
         </th>
         <th class="text-left">
-          Country
+          {{ $t("servers[0].tables[0].header[4]") }}
         </th>
       </tr>
     </thead>
@@ -35,26 +35,26 @@
           <v-toolbar>{{ data.name }}</v-toolbar>
           <v-card-text>
             <div>
-              <span class="font-weight-medium text-uppercase">players</span> {{ data.players }}/{{ data.maxPlayers > 999 ? '∞' : data.maxPlayers }}
+              <span class="font-weight-medium text-uppercase">{{ $t("servers[0].tables[0].modal[0]") }}</span> {{ data.players }}/{{ data.maxPlayers > 999 ? '∞' : data.maxPlayers }}
             </div>
             <div v-show="data.language">
-              <span class="font-weight-medium text-uppercase">language</span> {{ data.language ?? null }}
+              <span class="font-weight-medium text-uppercase">{{ $t("servers[0].tables[0].modal[1]") }}</span> {{ data.language ?? null }}
             </div>
             <div>
-              <span class="font-weight-medium text-uppercase">address</span> {{ data.address }}:{{ data.port }}
+              <span class="font-weight-medium text-uppercase">{{ $t("servers[0].tables[0].modal[2]") }}</span> {{ data.address }}:{{ data.port }}
             </div>
             <div v-show="data.gameMode">
-              <span class="font-weight-medium text-uppercase">gamemode</span> {{ data.gameMode ?? null }}
+              <span class="font-weight-medium text-uppercase">{{ $t("servers[0].tables[0].modal[3]") }}</span> {{ data.gameMode ?? null }}
             </div>
             <div v-show="data.website">
-              <span class="font-weight-medium text-uppercase">website</span> {{ data.website ?? null }}
+              <span class="font-weight-medium text-uppercase">{{ $t("servers[0].tables[0].modal[4]") }}</span> {{ data.website ?? null }}
             </div>
             <div v-show="data.description">
-              <span class="font-weight-medium text-uppercase">description</span> {{ data.description ?? null }}
+              <span class="font-weight-medium text-uppercase">{{ $t("servers[0].tables[0].modal[5]") }}</span> {{ data.description ?? null }}
             </div>
           </v-card-text>
           <v-card-actions>
-            <v-btn color="error" block @click="dialogs[index] = false">close dialog</v-btn>
+            <v-btn color="error" block @click="dialogs[index] = false">{{ $t("servers[0].tables[0].modal[6]") }}</v-btn>
           </v-card-actions>
         </v-card>
       </v-dialog>
