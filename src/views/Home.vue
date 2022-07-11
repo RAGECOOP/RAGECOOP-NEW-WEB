@@ -7,7 +7,7 @@
   </div>
 
   <v-container>
-    <div class="text-center">
+    <div class="d-flex justify-center">
       <iframe
         width="560"
         height="315"
@@ -16,7 +16,7 @@
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
-        class="iframe"
+        class="d-block iframe"
         style="max-width: 880px"
       ></iframe>
     </div>
