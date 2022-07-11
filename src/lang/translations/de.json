@@ -33,6 +33,10 @@
           ]
         }
       ]
+    },
+    {
+      "title": "Danke an die folgenden Mitwirkenden",
+      "contributions": "für seine erstaunlichen {0} Beiträge"
     }
   ]
 }

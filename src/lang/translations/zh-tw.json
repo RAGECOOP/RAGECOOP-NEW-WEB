@@ -33,6 +33,10 @@
           ]
         }
       ]
+    },
+    {
+      "title": "Thanks to the following contributors",
+      "contributions": "for his amazing {0} contributions"
     }
   ]
 }

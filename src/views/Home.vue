@@ -107,7 +107,7 @@
   </v-container>
 
   <v-container v-if="contributors !== null">
-    <h2 class="text-center">Thanks to the following contributors</h2>
+    <h2 class="text-center">{{ $t("home[1].title") }}</h2>
     <v-expansion-panels variant="popout">
       <v-expansion-panel v-for="(contributor, i) in contributors" :key="i" hide-actions>
         <v-expansion-panel-title>
@@ -124,7 +124,7 @@
 
             <v-col class="text-grey text-truncate hidden-sm-and-down">
               &mdash;
-              for his amazing {{ contributor.contributions }} contributions
+              {{ $t("home[1].contributions", [contributor.contributions]) }}
             </v-col>
           </v-row>
         </v-expansion-panel-title>
