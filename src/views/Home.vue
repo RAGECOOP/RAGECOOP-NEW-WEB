@@ -6,7 +6,7 @@
     </div>
   </div>
 
-  <v-container>
+  <!--<v-container>
     <div class="d-flex justify-center">
       <iframe
         width="560"
@@ -20,7 +20,7 @@
         style="max-width: 880px"
       ></iframe>
     </div>
-  </v-container>
+  </v-container>-->
 
   <v-container>
     <v-row>
