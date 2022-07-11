@@ -44,7 +44,7 @@ export default {
   data: () => ({
     dialog: false
   }),
-  props: ["server", "dialogs"],
+  props: ["server"],
   beforeCreate() {
     this.dialog = true
   }
