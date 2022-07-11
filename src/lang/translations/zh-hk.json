@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "titles": [
+      "Home",
+      "下載",
+      "Server列表",
+      "文檔",
+      "DC社群"
+    ],
+    "subtitles": [
+      "更多",
+      "開發人員"
+    ],
+    "tooltips": [
+      "客戶端和Server下載",
+      "所有公開噶Server列表",
+      "面嚮開發者噶文檔",
+      "喺Dsicord上面與我哋交流"
+    ]
+  },
+
+  "home": [
+    {
+      "title": "參照",
+      "subtitle": "與其他聯機MOD噶功能和性能對比",
+      "tables": [
+        {
+          "header": ["Option 1", "Option2"],
+          "content": [
+            "同步性",
+            "貢獻者",
+            "Mod兼容性"
+          ]
+        }
+      ]
+    }
+  ]
+}
