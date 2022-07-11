@@ -157,7 +157,7 @@ export default {
 <style scoped lang="scss">
 .test {
   height: calc(100vh - 65px);
-  background: url(https://ragecoop.online/assets/home.c13a89fc.webp) no-repeat 50%/cover;
+  background: url(@/assets/bg.webp) no-repeat 50%/cover;
 
   align-items: center;
   justify-content: center;
