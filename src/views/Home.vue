@@ -7,6 +7,19 @@
   </div>
 
   <v-container>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/tDcQpJ5silA"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      class="iframe"
+    ></iframe>
+  </v-container>
+
+  <v-container>
     <v-row>
       <v-col>
         <v-card>
@@ -109,5 +122,11 @@
 
 .text-shadow {
   text-shadow: 0 0 11px #000;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9;
 }
 </style>
