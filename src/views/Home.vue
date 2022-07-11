@@ -105,7 +105,54 @@
       </v-col>
     </v-row>
   </v-container>
+
+  <v-container v-if="contributors !== null">
+    <h2 class="text-center">Thanks to the following contributors</h2>
+    <v-expansion-panels variant="popout">
+      <v-expansion-panel v-for="(contributor, i) in contributors" :key="i" hide-actions>
+        <v-expansion-panel-title>
+          <v-row align="center" class="spacer" no-gutters>
+            <v-col cols="4" sm="2" md="1">
+              <v-avatar size="36px">
+                <v-img alt="Avatar" :src="contributor.avatar_url"></v-img>
+              </v-avatar>
+            </v-col>
+
+            <v-col class="text-truncate text-left ml-2" sm="5" md="3">
+              <strong v-html="contributor.login"></strong>
+            </v-col>
+
+            <v-col class="text-grey text-truncate hidden-sm-and-down">
+              &mdash;
+              for his amazing {{ contributor.contributions }} contributions
+            </v-col>
+          </v-row>
+        </v-expansion-panel-title>
+
+        <v-expansion-panel-text>
+          <v-card-text v-text="lorem"></v-card-text>
+        </v-expansion-panel-text>
+      </v-expansion-panel>
+    </v-expansion-panels>
+  </v-container>
 </template>
+
+<script>
+export default {
+  data: () => ({
+    contributors: null,
+    lorem: 'NO CONTENT',
+  }),
+  async mounted() {
+    await fetch('https://api.github.com/repos/RAGECOOP/RAGECOOP-V/contributors')
+          .then(res => res.json())
+          .then(data => {
+            this.contributors = data
+          })
+          .catch(err => console.error(err))
+  }
+}
+</script>
 
 <style scoped lang="scss">
 .test {
