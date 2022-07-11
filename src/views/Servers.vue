@@ -4,7 +4,8 @@
       <v-img
           class="align-end text-white"
           height="200"
-          src="https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2015/12/17/1331765933745_2/racing-in-gta-v"
+          src="/servers.webp"
+          lazy-src="/servers-lazy.webp"
           cover
         >
           <v-card-title>Servers</v-card-title>

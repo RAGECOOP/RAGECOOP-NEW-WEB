@@ -5,7 +5,8 @@
         <v-img
           class="align-end text-white"
           height="200"
-          :src="item.tag_name === 'nightly' ? 'https://gta5redux.com/wp-content/uploads/2016/09/gta5-2016-05-11-14-15-44.jpg' : 'https://img3.goodfon.com/wallpaper/nbig/e/c7/grand-theft-auto-5-gta5-gta.jpg'"
+          :src="item.tag_name === 'nightly' ? '/nightly.webp' : '/release.webp'"
+          :lazy-src="item.tag_name === 'nightly' ? '/nightly-lazy.webp' : '/release-lazy.webp'"
           cover
         >
           <v-card-title>{{ item.tag_name === 'nightly' ? 'Nightly build' : 'Release build' }}</v-card-title>

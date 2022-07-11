@@ -88,8 +88,8 @@
       </v-col>
       <v-col cols="5" class="d-none d-lg-block">
         <v-img
-          :src="`https://gtacoop.com/assets/images/character1.webp`"
-          :lazy-src="`https://gtacoop.com/assets/images/character1.webp`"
+          :src="`/character1.webp`"
+          :lazy-src="`/character1-lazy.webp`"
           aspect-ratio="1"
           class="franklin"
         >
