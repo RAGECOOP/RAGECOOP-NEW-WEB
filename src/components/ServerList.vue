@@ -36,7 +36,7 @@ export default {
     serverListItemComponent
   },
   async mounted() {
-    await fetch('https://ragecoop.herokuapp.com/')
+    await fetch('https://test.ragecoop.online/')
           .then(res => res.json())
           .then(data => {
             this.dialogs = new Array(data.length).fill(false)
