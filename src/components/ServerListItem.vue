@@ -37,7 +37,7 @@
 
           <v-col>
             <playerChartComponent :stats="server.playerStats.players" />
-            <small>Player count from the last 60 minutes (updated every 10 minutes)</small>
+            <small>Highest player count for the last 60 minutes (every 10 minutes)</small>
           </v-col>
         </v-row>
       </v-card-text>
