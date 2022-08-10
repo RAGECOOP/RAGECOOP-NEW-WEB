@@ -47,7 +47,10 @@ export default {
   components: {
     serverListItemComponent
   },
-  mounted() {
+  async mounted() {
+    // Don't wait for the first fetch
+    await this.updateServerList()
+
     // Set an interval to refresh the server list every 5 seconds without refreshing the page
     this.updateInterval = setInterval(async () => await this.updateServerList(), 5000)
   },

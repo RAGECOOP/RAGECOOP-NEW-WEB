@@ -19,7 +19,7 @@
             <div>
               <h3>Requirements</h3>
 
-              <v-card>
+              <v-card flat>
                 <v-list>
                   <v-list-item href="http://www.dev-c.com/gtav/scripthookv/">
                     <v-list-item-header>
@@ -68,7 +68,7 @@
             <div>
               <h3>Requirements</h3>
 
-              <v-card>
+              <v-card flat>
                 <v-list>
                   <v-list-item href="https://dotnet.microsoft.com/en-us/download/dotnet/6.0">
                     <v-list-item-header>
