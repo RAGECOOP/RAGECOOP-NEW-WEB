@@ -53,15 +53,6 @@
               <p>5. Unzip all files from "RageCoop.Client.zip" into your created "scripts" folder</p>
               <p>6. Right click on GTA V and run as administrator</p>
             </div>
-
-            <div class="mt-5">
-              <h3>Hotkeys</h3>
-
-              <p>- <span class="font-weight-medium">F9</span> to open the RAGECOOP menu</p>
-              <p>- <span class="font-weight-medium">Y</span> or <span class="font-weight-medium">Z</span> to open the player list</p>
-              <p>- <span class="font-weight-medium">T</span> to chat</p>
-              <p>- <span class="font-weight-medium">G</span> to enter a vehicle as passenger</p>
-            </div>
           </v-window-item>
 
           <v-window-item value="two">
