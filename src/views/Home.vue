@@ -44,15 +44,15 @@
               <tbody>
                 <tr>
                   <td>{{ $t("home[0].tables[0].content[0]") }}</td>
-                  <td><v-rating length="5" model-value="4" readonly /></td>
+                  <td><v-rating length="5" model-value="4" :item-labels="['bad', '', '', '', 'great']" item-label-position="bottom" readonly /></td>
                 </tr>
                 <tr>
                   <td>{{ $t("home[0].tables[0].content[1]") }}</td>
-                  <td><v-rating length="5" model-value="3" readonly /></td>
+                  <td><v-rating length="5" model-value="3" :item-labels="['bad', '', '', '', 'great']" item-label-position="bottom" readonly /></td>
                 </tr>
                 <tr>
                   <td>{{ $t("home[0].tables[0].content[2]") }}</td>
-                  <td><v-rating length="5" model-value="3" readonly /></td>
+                  <td><v-rating length="5" model-value="3" :item-labels="['bad', '', '', '', 'great']" item-label-position="bottom" readonly /></td>
                 </tr>
               </tbody>
             </v-table>
@@ -71,22 +71,22 @@
               <tbody>
                 <tr>
                   <td>{{ $t("home[0].tables[0].content[0]") }}</td>
-                  <td><v-rating length="5" model-value="2" readonly /></td>
+                  <td><v-rating length="5" model-value="2" :item-labels="['bad', '', '', '', 'great']" item-label-position="bottom" readonly /></td>
                 </tr>
                 <tr>
                   <td>{{ $t("home[0].tables[0].content[1]") }}</td>
-                  <td><v-rating length="5" model-value="1" readonly /></td>
+                  <td><v-rating length="5" model-value="1" :item-labels="['bad', '', '', '', 'great']" item-label-position="bottom" readonly /></td>
                 </tr>
                 <tr>
                   <td>{{ $t("home[0].tables[0].content[2]") }}</td>
-                  <td><v-rating length="5" model-value="0" readonly /></td>
+                  <td><v-rating length="5" model-value="1" :item-labels="['bad', '', '', '', 'great']" item-label-position="bottom" readonly /></td>
                 </tr>
               </tbody>
             </v-table>
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col cols="5" class="d-none d-lg-block">
+      <v-col cols="5" class="d-none d-lg-flex align-center">
         <v-img
           :src="`/character1.webp`"
           :lazy-src="`/character1-lazy.webp`"
@@ -113,9 +113,7 @@
         <v-expansion-panel-title>
           <v-row align="center" class="spacer" no-gutters>
             <v-col cols="4" sm="2" md="1">
-              <v-avatar size="36px">
-                <v-img alt="Avatar" :src="contributor.avatar_url"></v-img>
-              </v-avatar>
+              <v-avatar :image="contributor.avatar_url" size="36" />
             </v-col>
 
             <v-col class="text-truncate text-left ml-2" sm="5" md="3">

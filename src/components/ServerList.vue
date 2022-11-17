@@ -10,7 +10,7 @@
       />
     </div>
   </div>
-  <v-table v-else fixed-header height="max(calc(100vh - 330px), 300px)">
+  <v-table v-else hover="true" fixed-header height="max(calc(100vh - 330px), 300px)">
     <thead>
       <tr>
         <th class="text-left">

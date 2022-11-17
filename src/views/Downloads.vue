@@ -7,7 +7,7 @@
     <v-card>
       <v-tabs
         v-model="tab"
-        background-color="success"
+        bg-color="success"
       >
         <v-tab value="one">Install client</v-tab>
         <v-tab value="two">Install server</v-tab>

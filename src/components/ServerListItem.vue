@@ -11,7 +11,7 @@
     </template>
 
     <v-card>
-      <v-toolbar>{{ server.name }}</v-toolbar>
+      <v-toolbar :title="server.name" />
       <v-card-text>
         <v-row>
           <v-col>
