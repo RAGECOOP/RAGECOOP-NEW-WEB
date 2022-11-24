@@ -1,13 +1,8 @@
 <template>
-  <Line
-    :chart-options="chartOptions"
-    :chart-data="{ labels: [ -60, -50, -40, -30, -20, -10 ], datasets: [ { label: 'Player count', backgroundColor: '#4caf50', borderColor: '#4caf50', data: stats } ] }"
-    :chart-id="chartId"
-    :plugins="plugins"
-    :css-classes="cssClasses"
-    :styles="styles"
-    :width="width"
-    :height="height"
+  <Line class="chart"
+    :chart-data="{ ...chartData, ...chartData.datasets[0].data = stats }"
+    width="200"
+    height="100"
   />
 </template>
 
@@ -19,40 +14,31 @@ ChartJS.register(Title, Tooltip, Legend, LineElement, LinearScale, PointElement,
 
 export default {
   data: () => ({
-    chartOptions: {
-      responsive: true,
-      maintainAspectRatio: true
+    chartData: {
+      labels: [
+        "-60",
+        "-50",
+        "-40",
+        "-30",
+        "-20",
+        "-10"
+      ],
+      datasets: [{
+        label: "Players",
+        pointBackgroundColor: "#4caf50",
+        pointBorderColor: "rgba(0, 0, 0, .35)",
+        pointRadius: 5,
+        borderWidth: 3,
+        backgroundColor: "#4caf50",
+        data: [0, 0, 0, 0, 0, 0]
+      }]
     }
   }),
   components: { Line },
   props: {
     stats: {
       type: Array,
-      default: ["0", "1", "0", "7", "0", "0"]
-    },
-    chartId: {
-      type: String,
-      default: 'line-chart'
-    },
-    width: {
-      type: Number,
-      default: 200
-    },
-    height: {
-      type: Number,
-      default: 100
-    },
-    cssClasses: {
-      default: '',
-      type: String
-    },
-    styles: {
-      type: Object,
-      default: () => {}
-    },
-    plugins: {
-      type: Array,
-      default: () => []
+      default: ["0", "0", "0", "0", "0", "0"]
     }
   }
 }

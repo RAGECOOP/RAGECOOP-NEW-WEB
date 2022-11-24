@@ -13,8 +13,8 @@
     <v-card>
       <v-toolbar :title="server.name" />
       <v-card-text>
-        <v-row>
-          <v-col>
+        <v-row no-gutters>
+          <v-col :cols="cols[0]">
             <div>
               <span class="font-weight-medium text-uppercase">{{ $t("servers[0].tables[0].modal[0]") }}</span> {{ server.players }}/{{ server.maxPlayers > 999 ? '∞' : server.maxPlayers }}
             </div>
@@ -35,7 +35,7 @@
             </div>
           </v-col>
 
-          <v-col>
+          <v-col :cols="cols[1]">
             <playerChartComponent :stats="server.playerStats.players" />
             <small>Highest player count for the last 60 minutes (every 10 minutes)</small>
           </v-col>
@@ -61,6 +61,14 @@ export default {
   },
   beforeCreate() {
     this.dialog = true
+  },
+  computed: {
+    cols() {
+      const { xl, lg, md } = this.$vuetify.display
+      if (xl || lg) return [6, 6]
+      if (md) return [5, 7]
+      return [12, 12]
+    }
   }
 }
 </script>
