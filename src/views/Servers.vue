@@ -38,9 +38,9 @@ export default {
   },
   async mounted() {
     this.update()
-    
+
     // Update every 2.5 seconds
-    setInterval(this.update, 2500)
+    this.updateInterval = setInterval(this.update, 2500)
   },
   beforeUnmount() {
     clearInterval(this.updateInterval)
