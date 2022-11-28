@@ -10,7 +10,7 @@
       />
     </div>
   </div>
-  <v-table v-else hover="true" fixed-header height="max(calc(100vh - 330px), 300px)">
+  <v-table v-else :hover="true" fixed-header height="max(calc(100vh - 330px), 300px)">
     <thead>
       <tr>
         <th class="text-left">
@@ -40,33 +40,12 @@
 import serverListItemComponent from '@/components/ServerListItem.vue'
 
 export default {
-  data: () => ({
-    servers: null,
-    updateInterval: null
-  }),
   components: {
     serverListItemComponent
   },
-  async mounted() {
-    // Don't wait for the first fetch
-    await this.updateServerList()
-
-    // Set an interval to refresh the server list every 5 seconds without refreshing the page
-    this.updateInterval = setInterval(async () => await this.updateServerList(), 5000)
-  },
-  beforeUnmount() {
-    clearInterval(this.updateInterval)
-    this.updateInterval = null
-  },
-  methods: {
-    async updateServerList() {
-      await fetch('https://masterserver.ragecoop.online/')
-          .then(res => res.json())
-          .then(data => {
-            this.dialogs = new Array(data.length).fill(false)
-            this.servers = data
-          })
-          .catch(err => console.error(err))
+  props: {
+    servers: {
+      type: Array
     }
   }
 }

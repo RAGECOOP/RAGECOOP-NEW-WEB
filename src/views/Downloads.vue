@@ -22,22 +22,16 @@
               <v-card flat>
                 <v-list>
                   <v-list-item href="http://www.dev-c.com/gtav/scripthookv/">
-                    <v-list-item-header>
-                      <v-list-item-title>ScriptHookV</v-list-item-title>
-                      <v-list-item-subtitle>Required for ScriptHookVDotNet</v-list-item-subtitle>
-                    </v-list-item-header>
+                    <v-list-item-title>ScriptHookV</v-list-item-title>
+                    <v-list-item-subtitle>Required for ScriptHookVDotNet</v-list-item-subtitle>
                   </v-list-item>
                   <v-list-item href="https://github.com/crosire/scripthookvdotnet/releases">
-                    <v-list-item-header>
-                      <v-list-item-title>ScriptHookVDotNet</v-list-item-title>
-                      <v-list-item-subtitle>Required for RAGECOOP and other modifications</v-list-item-subtitle>
-                    </v-list-item-header>
+                    <v-list-item-title>ScriptHookVDotNet</v-list-item-title>
+                    <v-list-item-subtitle>Required for RAGECOOP and other modifications</v-list-item-subtitle>
                   </v-list-item>
                   <v-list-item href="#">
-                    <v-list-item-header>
-                      <v-list-item-title>RAGECOOP Client</v-list-item-title>
-                      <v-list-item-subtitle>Nightly for the last build or Release for the last stable build</v-list-item-subtitle>
-                    </v-list-item-header>
+                    <v-list-item-title>RAGECOOP Client</v-list-item-title>
+                    <v-list-item-subtitle>Nightly for the last build or Release for the last stable build</v-list-item-subtitle>
                   </v-list-item>
                 </v-list>
               </v-card>
@@ -62,16 +56,12 @@
               <v-card flat>
                 <v-list>
                   <v-list-item href="https://dotnet.microsoft.com/en-us/download/dotnet/6.0">
-                    <v-list-item-header>
-                      <v-list-item-title>.NET 6.0 (Runtime or SDK) or later</v-list-item-title>
-                      <v-list-item-subtitle>Required to run the server</v-list-item-subtitle>
-                    </v-list-item-header>
+                    <v-list-item-title>.NET 6.0 (Runtime or SDK) or later</v-list-item-title>
+                    <v-list-item-subtitle>Required to run the server</v-list-item-subtitle>
                   </v-list-item>
                   <v-list-item href="#">
-                    <v-list-item-header>
-                      <v-list-item-title>RAGECOOP Server *</v-list-item-title>
-                      <v-list-item-subtitle>Choose your OS (*-WIN-X64 for Windows, *-LINUX-x64 for Linux or *-LINUX-ARM for ARM like Raspberry)</v-list-item-subtitle>
-                    </v-list-item-header>
+                    <v-list-item-title>RAGECOOP Server *</v-list-item-title>
+                    <v-list-item-subtitle>Choose your OS (*-WIN-X64 for Windows, *-LINUX-x64 for Linux or *-LINUX-ARM for ARM like Raspberry)</v-list-item-subtitle>
                   </v-list-item>
                 </v-list>
               </v-card>

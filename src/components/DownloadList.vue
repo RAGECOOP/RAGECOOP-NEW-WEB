@@ -23,8 +23,6 @@ export default {
           .then(data => this.list.push(data[0]))
           .catch(err => console.error(err))
 
-    console.log(this.list[0])
-
     // Get the NIGHTLY build 70603992
     await fetch('https://api.github.com/repos/RAGECOOP/RAGECOOP-V/releases/70603992')
           .then(res => res.json())
