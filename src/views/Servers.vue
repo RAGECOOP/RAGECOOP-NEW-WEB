@@ -8,10 +8,10 @@
           lazy-src="/servers-lazy.webp"
           cover
         >
-          <v-card-title>Servers {{ count.servers }} | Players {{ count.players }}</v-card-title>
+          <v-card-title>Servers {{ fetchResult?.server_count ?? 0 }} | Players {{( fetchResult?.player_count ?? 0 )}}</v-card-title>
         </v-img>
-      <v-card-text v-if="servers !== null">
-        <serverListComponent :servers="servers" />
+      <v-card-text v-if="fetchResult !== null">
+        <serverListComponent :servers="fetchResult.servers" />
       </v-card-text>
       <v-card-text v-else>
         <v-progress-circular
@@ -29,8 +29,7 @@ import serverListComponent from '@/components/ServerList.vue'
 
 export default {
   data: () => ({
-    count: { servers: 0, players: 0 },
-    servers: [],
+    fetchResult: null,
     updateInterval: null
   }),
   components: {
@@ -47,14 +46,9 @@ export default {
   },
   methods: {
     async update() {
-      await fetch('https://masterserver.ragecoop.online/')
+      await fetch('https://masterserver.ragecoop.online/all')
             .then(res => res.json())
-            .then(res => this.servers = res)
-            .catch(err => console.error(err))
-
-      await fetch('https://masterserver.ragecoop.online/count')
-            .then(res => res.json())
-            .then(res => this.count = res)
+            .then(res => this.fetchResult = res)
             .catch(err => console.error(err))
     }
   }
