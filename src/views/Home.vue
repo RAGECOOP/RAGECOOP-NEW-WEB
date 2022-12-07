@@ -6,22 +6,6 @@
     </div>
   </div>
 
-  <!--<v-container>
-    <div class="d-flex justify-center">
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/tDcQpJ5silA"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        class="d-block iframe"
-        style="max-width: 880px"
-      ></iframe>
-    </div>
-  </v-container>-->
-
   <v-container>
     <v-row>
       <v-col>
@@ -31,16 +15,6 @@
           <v-card-text>
             <div class="text-h5">RAGECOOP</div>
             <v-table>
-              <thead>
-                <tr>
-                  <th class="text-left">
-                    {{ $t("home[0].tables[0].header[0]") }}
-                  </th>
-                  <th class="text-left">
-                    {{ $t("home[0].tables[0].header[1]") }}
-                  </th>
-                </tr>
-              </thead>
               <tbody>
                 <tr>
                   <td>{{ $t("home[0].tables[0].content[0]") }}</td>
@@ -58,16 +32,6 @@
             </v-table>
             <div class="text-h5 pt-2">GTACOOP</div>
             <v-table>
-              <thead>
-                <tr>
-                  <th class="text-left">
-                    {{ $t("home[0].tables[0].header[0]") }}
-                  </th>
-                  <th class="text-left">
-                    {{ $t("home[0].tables[0].header[1]") }}
-                  </th>
-                </tr>
-              </thead>
               <tbody>
                 <tr>
                   <td>{{ $t("home[0].tables[0].content[0]") }}</td>
@@ -105,7 +69,7 @@
       </v-col>
     </v-row>
   </v-container>
-
+  
   <v-container v-if="contributors !== null">
     <h2 class="text-center">{{ $t("home[1].title") }}</h2>
     <v-expansion-panels variant="popout">

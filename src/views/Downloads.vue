@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <downloadListComponent />
+    <downloadListComponent :list="download_list" />
   </v-container>
 
   <v-container>
@@ -75,6 +75,26 @@
       </v-card-text>
     </v-card>
   </v-container>
+
+  <v-container>
+    <h2 class="text-center">LATEST 5 UPDATES</h2>
+    <v-timeline side="end" align="start">
+      <v-timeline-item v-for="item in changelog_list" dot-color="#ffa500" size="small">
+        <div class="d-flex">
+          <div>
+            <strong>{{ item.name }}</strong>
+            <div>
+              <v-card>
+                <v-card-item>
+                  <p v-html="item.body"></p>
+                </v-card-item>
+              </v-card>
+            </div>
+          </div>
+        </div>
+      </v-timeline-item>
+    </v-timeline>
+  </v-container>
 </template>
 
 <script>
@@ -82,10 +102,28 @@ import downloadListComponent from '@/components/DownloadList.vue'
 
 export default {
   data: () => ({
-    tab: null
+    tab: null,
+    download_list: [],
+    changelog_list: []
   }),
   components: {
     downloadListComponent
+  },
+  async beforeMount() {
+    // Get the latest 5 release
+    await fetch('https://api.github.com/repos/RAGECOOP/RAGECOOP-V/releases?page=1&per_page=5')
+          .then(res => res.json())
+          .then(data => {
+            this.download_list.push(data[0])
+            this.changelog_list = data
+          })
+          .catch(err => console.error(err))
+
+    // Get the NIGHTLY build 70603992
+    await fetch('https://api.github.com/repos/RAGECOOP/RAGECOOP-V/releases/70603992')
+          .then(res => res.json())
+          .then(data => this.download_list.push(data))
+          .catch(err => console.error(err))
   }
 }
 </script>
