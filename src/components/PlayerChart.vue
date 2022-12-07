@@ -1,6 +1,6 @@
 <template>
   <Line class="chart"
-    :chart-data="{ ...chartData, ...chartData.datasets[0].data = stats }"
+    :data="{ ...chartData, ...chartData.datasets[0].data = stats }"
     :width="200"
     :height="100"
   />
