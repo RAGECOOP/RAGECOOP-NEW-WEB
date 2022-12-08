@@ -118,7 +118,7 @@ export default {
 
 <style scoped lang="scss">
 .test {
-  height: calc(100vh - 65px);
+  height: calc(100vh - 64.5px);
   background: url(@/assets/bg.webp) no-repeat 50%/cover;
 
   align-items: center;

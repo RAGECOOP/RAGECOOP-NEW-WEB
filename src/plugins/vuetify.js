@@ -5,6 +5,10 @@ import 'vuetify/styles'
 // Vuetify
 import { createVuetify } from 'vuetify'
 
-export default createVuetify(
-  // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
-)
+const darkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+export default createVuetify({
+  theme: {
+    defaultTheme: darkMode ? 'dark' : 'light'
+  }
+})

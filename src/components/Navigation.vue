@@ -19,11 +19,19 @@
         <v-tooltip activator="parent" location="bottom">{{ $t("nav.tooltips[2]") }}</v-tooltip>
       </v-btn>
     </v-app-bar-title>
-
-    <v-btn color="rgba(110, 133, 211, 1)" href="https://discord.com/invite/cdkd5E8h9h">
+    
+    <v-btn href="https://discord.com/invite/cdkd5E8h9h">
       <v-icon color="rgba(110, 133, 211, 1)" class="mr-1">mdi-youtube-gaming</v-icon>
       {{ $t("nav.titles[4]") }}
       <v-tooltip activator="parent" location="bottom">{{ $t("nav.tooltips[3]") }}</v-tooltip>
+    </v-btn>
+    <v-btn v-if="theme.global.current.value.dark" v-on:click="(theme.global.name.value = 'light')">
+      <v-icon color="rgba(245, 242, 137, 1)" class="mr-1">mdi-white-balance-sunny</v-icon>
+      <v-tooltip activator="parent" location="bottom">light mode?</v-tooltip>
+    </v-btn>
+    <v-btn v-else v-on:click="(theme.global.name.value = 'dark')">
+      <v-icon color="rgba(69, 76, 98, 1)" class="mr-1">mdi-moon-waxing-crescent</v-icon>
+      <v-tooltip activator="parent" location="bottom">dark mode?</v-tooltip>
     </v-btn>
   </v-app-bar>
   <v-navigation-drawer v-model="drawer">
@@ -51,7 +59,12 @@
 </template>
 
 <script>
+import { useTheme } from 'vuetify'
+
 export default {
+  setup: () => {
+    return { theme: useTheme() }
+  },
   data: () => ({
     drawer: false
   }),
