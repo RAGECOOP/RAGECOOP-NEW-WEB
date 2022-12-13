@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify'
 import { loadFonts } from './plugins/webfontloader'
+import VueCookies from 'vue-cookies'
 
 // Custom imports
 import router from '@/router'
@@ -19,6 +20,7 @@ export const i18n = createI18n({
 })
 
 createApp(App)
+  .use(VueCookies, { expires: '7d' })
   .use(vuetify)
   .use(router)
   .use(i18n)

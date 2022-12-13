@@ -1,6 +1,6 @@
 <template>
   <v-row>
-    <v-col v-for="(value, index) in list" :key="index">
+    <v-col v-for="(value, index) in list" :key="index" cols="12" sm="6">
       <DownloadListItemComponent :item="value" />
     </v-col>
   </v-row>

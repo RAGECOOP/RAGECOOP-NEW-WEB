@@ -25,11 +25,11 @@
       {{ $t("nav.titles[4]") }}
       <v-tooltip activator="parent" location="bottom">{{ $t("nav.tooltips[3]") }}</v-tooltip>
     </v-btn>
-    <v-btn v-if="theme.global.current.value.dark" v-on:click="(theme.global.name.value = 'light')">
+    <v-btn v-if="theme.global.current.value.dark" v-on:click="changeTheme('light')">
       <v-icon color="rgba(245, 242, 137, 1)" class="mr-1">mdi-white-balance-sunny</v-icon>
       <v-tooltip activator="parent" location="bottom">light mode?</v-tooltip>
     </v-btn>
-    <v-btn v-else v-on:click="(theme.global.name.value = 'dark')">
+    <v-btn v-else v-on:click="changeTheme('dark')">
       <v-icon color="rgba(69, 76, 98, 1)" class="mr-1">mdi-moon-waxing-crescent</v-icon>
       <v-tooltip activator="parent" location="bottom">dark mode?</v-tooltip>
     </v-btn>
@@ -69,11 +69,22 @@ export default {
     drawer: false
   }),
   mounted() {
-    window.addEventListener('resize', (e, a) => {
+    if (this.$cookies.isKey("theme"))
+    {
+      this.theme.global.name.value = this.$cookies.get("theme")
+    }
+
+    window.addEventListener('resize', (e, _) => {
       if (this.drawer && e.target.innerWidth >= 960) {
         this.drawer = false
       }
     })
+  },
+  methods: {
+    changeTheme(theme) {
+      this.theme.global.name.value = theme
+      this.$cookies.set("theme", theme)
+    }
   }
 }
 </script>

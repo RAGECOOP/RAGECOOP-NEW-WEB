@@ -13,7 +13,7 @@
     <v-card>
       <v-toolbar :title="server.name" />
       <v-card-text>
-        <v-row no-gutters>
+        <v-row>
           <v-col :cols="cols[0]">
             <div>
               <span class="font-weight-medium text-uppercase">{{ $t("servers[0].tables[0].modal[0]") }}</span> {{ server.players }}/{{ server.maxPlayers > 999 ? '∞' : server.maxPlayers }}
