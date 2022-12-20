@@ -12,17 +12,17 @@
     "@mdi/font": "7.1.96",
     "roboto-fontface": "*",
     "vue": "^3.2.45",
-    "vue-chartjs": "^5.0.1",
+    "vue-chartjs": "^5.1.0",
     "vue-cookies": "^1.8.2",
     "vue-i18n": "^9.2.2",
     "vue-router": "^4.1.6",
-    "vuetify": "^3.0.4",
+    "vuetify": "^3.0.5",
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
-    "sass": "^1.56.2",
-    "vite": "^4.0.1",
+    "sass": "^1.57.1",
+    "vite": "^4.0.2",
     "vite-plugin-vuetify": "^1.0.1",
     "vue-cli-plugin-vuetify": "~2.5.8"
   }
