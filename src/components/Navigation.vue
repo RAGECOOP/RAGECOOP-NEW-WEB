@@ -14,7 +14,7 @@
         {{ $t("nav.titles[2]") }}
         <v-tooltip activator="parent" location="bottom">{{ $t("nav.tooltips[1]") }}</v-tooltip>
       </v-btn>
-      <v-btn class="d-none d-md-inline-flex mx-md-1" href="https://docs.ragecoop.online/">
+      <v-btn class="d-none d-md-inline-flex mx-md-1" href="https://docs.ragecoop.com/">
         {{ $t("nav.titles[3]") }}
         <v-tooltip activator="parent" location="bottom">{{ $t("nav.tooltips[2]") }}</v-tooltip>
       </v-btn>
@@ -51,7 +51,7 @@
       <v-list-item>
         <v-list-item-subtitle>{{ $t("nav.subtitles[1]") }}</v-list-item-subtitle>
       </v-list-item>
-      <v-list-item href="https://docs.ragecoop.online/">
+      <v-list-item href="https://docs.ragecoop.com/">
         <v-list-item-title>{{ $t("nav.titles[3]") }}</v-list-item-title>
       </v-list-item>
     </v-list>

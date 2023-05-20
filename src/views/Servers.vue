@@ -46,7 +46,7 @@ export default {
   },
   methods: {
     async update() {
-      await fetch('https://masterserver.ragecoop.online/all')
+      await fetch('https://masterserver.ragecoop.com/all')
             .then(res => res.json())
             .then(res => this.fetchResult = res)
             .catch(err => console.error(err))
