@@ -60,15 +60,16 @@
                     <v-list-item-subtitle>Required to run the server</v-list-item-subtitle>
                   </v-list-item>
                   <v-list-item href="#">
-                    <v-list-item-title>RAGECOOP Server *</v-list-item-title>
-                    <v-list-item-subtitle>Choose your OS (*-WIN-X64 for Windows, *-LINUX-x64 for Linux or *-LINUX-ARM for ARM like Raspberry)</v-list-item-subtitle>
+                    <v-list-item-title>RAGECOOP Server</v-list-item-title>
+                    <v-list-item-subtitle>Choose your OS</v-list-item-subtitle>
                   </v-list-item>
                 </v-list>
               </v-card>
             </div>
 
             <div class="mt-5">
-              COMING SOON
+              <h3>Installation</h3>
+              <p>Refer to the <a href="https://github.com/RAGECOOP/RAGECOOP-V/wiki/Set-up-a-server">wiki</a></p>
             </div>
           </v-window-item>
         </v-window>
